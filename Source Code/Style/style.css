@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+:root {
+   --primary-color: black;
+   --secondary-color: orange;
+   --dark-secondary-color: #691d10;
+  --light-secondary-color: white;
+  --primary-font: 'Open Sans', sans-serif;
+}
+*{
+   box-sizing: border-box;
+   padding:0;
+   margin:0;
+   scroll-behavior: smooth;
+}
+/* keeping the footer at bottom */
+.footer-bottom{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+main{
+   flex: 1;
+}
+/* removing default style of links and lists */
+a {
+   color:#333;
+   text-decoration: none;
+}
+
+ul{
+   list-style: none;
+}
+/* Button designing */
+.buttonlight {
+   display: block;
+   color: var(--dark-secondary-color);
+   text-align: center;
+   font-family: var(--Primary-font);
+   font-size: 1.2rem;
+   font-weight: bold;
+   background-color: var(--secondary-color);
+   border-radius: 0.3rem;
+   transition: all ease-in-out 0.3s;
+ }
+ .buttonlight:hover {
+   background-color: var(--dark-secondary-color);
+   color: var(--secondary-color);
+ }
+
+/* page title card design */
+.cardone {
+   width: 100%;
+   text-align: center;
+   padding: 2rem 3rem;
+   font-size: 1.5rem;
+   margin: 1rem auto;
+   background-color: var(--primary-color);
+   color: var(--light-secondary-color);
+   font-family: var(--Primary-font);
+   opacity: 0.9;
+ }
+
+ /* Form Styling */
+ .form {
+   margin: 1rem auto;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 2rem 0.5rem;
+  border-radius: 0.8rem;
+  color: var(--secondary-color);
+  text-align: left;
+  opacity: 0.9;
+  border: var(--secondary-color) 0.2rem solid;
+}
+
+.form h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-family: var(--Primary-font);
+  font-size: 2rem;
+}
+.form .input-group label {
+  font-size: 1.5rem;
+  font-family: var(--Primary-font);
+display: block;
+}
+.form .input-group input,
+.form .input-group select {
+   width: 100%;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+  margin-top:10px;
+  margin-bottom: 30px;
+  border-radius: 0.2rem;
+  border: var(--dark-secondary-color) 0.2rem solid;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.form .input-group input:focus {
+  background-color: var(--light-secondary-color);
+}
+.form .buttonlight {
+  width: 50%;
+  height: 4rem;
+  border: none;
+  border: var(--dark-secondary-color) 2px solid;
+}
+
+/* table styling */
+.primary-table {
+   margin: 1rem auto;
+   background-color: var(--light-secondary-color);
+   border-collapse: collapse;
+   font-size: 0.9rem;
+   width: 90%;
+   border-radius: 10px 10px 0 0;
+   overflow: hidden;
+ }
+
+ .primary-table thead tr {
+   background-color: var(--primary-color);
+   color: var(--light-secondary-color);
+   text-align: left;
+   font-weight: bold;
+   font-family: var(--Primary-font);
+ }
+ .primary-table th,
+ .primary-table td {
+   padding: 12px 15px;
+ }
+ .primary-table tbody tr {
+   border-bottom: 1px solid var(--light-secondary-color);
+   font-family: var(--secondary-font);
+ }
+ .primary-table tbody tr:nth-of-type(even) {
+   background-color: var(--secondary-color);
+ }
+ .primary-table tbody tr:nth-of-type(odd):hover {
+   background-color: var(--secondary-color);
+ }
+ 
+ .primary-table tbody tr:last-of-type {
+   border-bottom: 5px solid var(--primary-color);
+ }
+
+ .primary-table tbody tr td:last-of-type {
+   width: 0;
+ }
+
+ .tablebutton{
+   padding: .2rem 1rem;
+   border: 2px var(--dark-secondary-color) solid;
+ }
+ 
+ /* styling for card that is shown when a table is empty */
+.emptyrecord {
+   width: 80%;
+   border-radius: 0.5rem;
+   text-align: center;
+   padding: 2rem 3rem;
+   font-size: 1.5rem;
+   margin: 1rem auto;
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+   font-family: var(--Primary-font);
+ }
+ /* styling for card that is shown when a table is empty */
+.errorcard {
+   width: 50%;
+   border: 6px var(--primary-color) solid;
+   border-radius: 0.5rem;
+   opacity:0.9;
+   text-align: center;
+   padding: 0.5rem 1rem;
+   font-size: 1rem;
+   margin: 1rem auto;
+   background-color: var(--secondary-color);
+   color: var(--dark-secondary-color);
+   font-family: var(--Primary-font);
+ }
+ /* table title card */
+ .table-top-card {
+   width: fit-content;
+   text-align: center;
+   padding: 1.5rem 2rem;
+   font-size: 1.5rem;
+   margin: 1rem auto;
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+   font-family: var(--Primary-font);
+   border-radius: 1rem;
+ }
+/* NavBar */
+#navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--primary-color);
+   border-bottom: var(--secondary-color) 0.2rem solid;
+   color: var(--light-secondary-color);
+   width: 100%;
+   height: 70px;
+   top: 0px;
+   padding: 0 30px;
+}
+#navbar a {
+   color: var(--light-secondary-color);
+   padding: 10px 20px;
+   margin: 0 5px;
+}
+#navbar a:hover{
+   border-bottom: var(--secondary-color) 4px solid;
+}
+#navbar ul {
+   display:flex;
+}
+
+#navbar .logo {
+   color: var(--secondary-color);
+}
+/* Footer */
+footer {
+   border-top: var(--secondary-color) 0.2rem solid;
+   height: 11rem;
+   color: var(--light-secondary-color);
+   width: 100%;
+   background-color: var(--primary-color);
+ }
+ .footer-text {
+   margin-top: 1rem;
+   text-align: center;
+   color: var(--secondary-color);
+   font-family: var(--primary-font);
+   letter-spacing: 1px;
+ }
+ /* to make h1 h2 text thin and large */
+h1,h2 {
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+body{
+   font-family: var(--primary-font);
+}
+/* index page/ welcome page */
+.welcome{
+   /* Photo credit: Tan Kaninthanond (Unsplash.com) */
+   background: url('../img/tan-kaninthanond-iwqJtQUgqAc-unsplash.jpg') no-repeat center center/cover;
+   height: 100vh;
+   color: var(--light-secondary-color);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.welcome .cardone{
+   height: 40%;
+   opacity: 0.7;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 4rem;
+   border-top: var(--secondary-color) 0.2rem solid;
+   border-bottom: var(--secondary-color) 0.2rem solid;
+}
+
+.welcome .cardone span{
+   color: var(--secondary-color);
+   font-weight: bold;
+}
+/* Login Page */
+#loginbody{
+   /* Photo credit: Tan Kaninthanond (Unsplash.com) */
+   background: url('../img/tan-kaninthanond-iwqJtQUgqAc-unsplash.jpg') no-repeat center center/cover;
+}
+/* Search Page */
+#searchbody{
+   /* Photo credit: Digby Cheung (Unsplash.com) */
+   background: url('../img/digby-cheung-7ZSMjPwpr5k-unsplash.jpg') no-repeat center center/cover;
+}
+ 
+ 
